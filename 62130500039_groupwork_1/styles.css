@@ -1,0 +1,623 @@
+.container,
+.item {
+    width: 500px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    bottom: 500px;
+}
+
+.first {
+    top: 0;
+    opacity: 1;
+    z-index: 0;
+}
+
+.first {
+    animation: aone 20s ease-in-out infinite;
+}
+
+.second {
+    animation: atwo 20s ease-in-out infinite;
+}
+
+.third {
+    animation: athree 20s ease-in-out infinite;
+}
+
+.fourth {
+    animation: afour 20s ease-in-out infinite;
+}
+
+@keyframes aone {
+    0% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    20% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    25% {
+        top: -500px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    26% {
+        top: -500px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    27% {
+        top: 500px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    95% {
+        top: 500px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+}
+
+@keyframes atwo {
+    0% {
+        top: 500px;
+        opacity: 0;
+    }
+
+    20% {
+        top: 500px;
+        opacity: 0;
+    }
+
+    25% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    45% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    50% {
+        top: -500px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    51% {
+        top: 500px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    100% {
+        top: 500px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes athree {
+    0% {
+        top: 500px;
+        opacity: 0;
+    }
+
+    45% {
+        top: 500px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    50% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    70% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    75% {
+        top: -500px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    76% {
+        top: 500px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    100% {
+        top: 500px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes afour {
+    0% {
+        top: 500px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    70% {
+        top: 500px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    75% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    95% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    100% {
+        top: -500px;
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+#b1 {
+    background-color: lightseagreen;
+}
+
+#b1 {
+    animation: ac1 20s ease-in-out infinite;
+}
+
+#b2 {
+    animation: ac2 20s ease-in-out infinite;
+}
+
+#b3 {
+    animation: ac3 20s ease-in-out infinite;
+}
+
+#b4 {
+    animation: ac4 20s ease-in-out infinite;
+}
+
+@keyframes ac1 {
+    0% {
+        background-color: lightgray;
+    }
+
+    1% {
+        background-color: rgba(217, 119, 6, .75);
+    }
+
+    20% {
+        background-color: rgba(217, 119, 6, .75);
+    }
+
+    25% {
+        background-color: lightgray;
+    }
+
+    26% {
+        background-color: lightgray;
+    }
+
+    27% {
+        background-color: lightgray;
+    }
+
+    95% {
+        background-color: lightgray;
+    }
+
+    100% {
+        background-color: lightgray;
+    }
+}
+
+@keyframes ac2 {
+    0% {
+        background-color: lightgray;
+    }
+
+    20% {
+        background-color: lightgray;
+    }
+
+    25% {
+        background-color: rgba(4, 120, 87, .75);
+    }
+
+    45% {
+        background-color: rgba(4, 120, 87, .75);
+    }
+
+    50% {
+        background-color: lightgray;
+    }
+
+    51% {
+        background-color: lightgray;
+    }
+
+    100% {
+        background-color: lightgray;
+    }
+}
+
+@keyframes ac3 {
+    0% {
+        background-color: lightgray;
+    }
+
+    45% {
+        background-color: lightgray;
+    }
+
+    50% {
+        background-color: rgba(29, 78, 216, .75);
+    }
+
+    68% {
+        background-color: rgba(29, 78, 216, .75);
+    }
+
+    70% {
+        background-color: rgba(29, 78, 216, .75);
+    }
+
+    76% {
+        background-color: lightgray;
+    }
+
+    100% {
+        background-color: lightgray;
+    }
+}
+
+@keyframes ac4 {
+    0% {
+        background-color: lightgray;
+    }
+
+    70% {
+        background-color: lightgray;
+    }
+
+    75% {
+        background-color: rgb(4, 120, 87);
+    }
+
+    96% {
+        background-color: rgb(4, 120, 87);
+    }
+
+    97% {
+        background-color: lightgray;
+    }
+
+    100% {
+        background-color: lightgray;
+    }
+
+}
+
+.btn {
+    animation: btnanm 20s infinite;
+}
+
+@keyframes btnanm {
+    0% {
+        background-color: rgb(207, 158, 22);
+    }
+
+    24% {
+        background-color: rgb(207, 158, 22);
+    }
+
+    25% {
+        background-color: rgb(3, 145, 105);
+    }
+
+    49% {
+        background-color: rgb(3, 145, 105);
+    }
+
+    50% {
+        background-color: rgb(52, 96, 219);
+    }
+
+    69% {
+        background-color: rgb(52, 96, 219);
+    }
+
+    75% {
+        background-color: rgb(4, 120, 87);
+    }
+
+    99% {
+        background-color: rgb(4, 120, 87);
+    }
+
+    100% {
+        background-color: rgb(207, 158, 22);
+    }
+}
+
+.icontainer,
+.im {
+    width: 15rem;
+    height: 24rem;
+}
+
+.icontainer {
+    margin-bottom: 1rem;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.im {
+    position: absolute;
+}
+
+.if {
+    top: 0;
+    opacity: 1;
+    z-index: 0;
+}
+.if{
+    animation: i1 20s ease-in-out infinite;
+}
+
+.is {
+    animation: i2 20s ease-in-out infinite;
+}
+
+.it {
+    animation: i3 20s ease-in-out infinite;
+}
+
+.ifo {
+    animation: i4 20s ease-in-out infinite;
+}
+
+.delay1{
+    animation-delay: 100ms;
+}
+
+.delay2{
+    animation-delay: 150ms;
+}
+.delay3{
+    animation-delay: 200ms;
+}
+.delay4{
+    animation-delay: 250ms;
+}
+.delay5{
+    animation-delay: 300ms;
+}
+.delay6{
+    animation-delay: 350ms;
+}
+.delay7{
+    animation-delay: 400ms;
+}
+.delay8{
+    animation-delay: 450ms;
+}
+.delay9{
+    animation-delay: 500ms;
+}
+.delay10{
+    animation-delay: 550ms;
+}
+.delay11{
+    animation-delay: 600ms;
+}
+.delay12{
+    animation-delay: 650ms;
+}
+.delay13{
+    animation-delay: 700ms;
+}
+.delay14{
+    animation-delay: 750ms;
+}
+@keyframes i1{
+    0%{
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    20%{
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    25%{
+        top: -50px;
+        opacity: 0;
+        z-index: -1;
+    }
+    26% {
+        top: -50px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    27% {
+        top: 50px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    95% {
+        top: 50px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+}
+
+@keyframes i2{
+    0% {
+        top: 50px;
+        opacity: 0;
+    }
+
+    20% {
+        top: 50px;
+        opacity: 0;
+    }
+
+    25% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    45% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    50% {
+        top: -50px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    51% {
+        top: 50px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    100% {
+        top: 50px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes i3{
+    0% {
+        top: 50px;
+        opacity: 0;
+    }
+
+    45% {
+        top: 50px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    50% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    70% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    75% {
+        top: -50px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    76% {
+        top: 50px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    100% {
+        top: 50px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes i4{
+    0% {
+        top: 50px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    70% {
+        top: 50px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    75% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    95% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    100% {
+        top: -50px;
+        opacity: 0;
+        z-index: 0;
+    }
+}
